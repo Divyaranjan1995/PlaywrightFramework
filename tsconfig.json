@@ -10,7 +10,11 @@
     "strict": true,
     "skipLibCheck": true,
     "types": ["node", "@playwright/test"],
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "paths": {
+      "@e2e/*": ["e2e/*"],
+      "@pages/*": ["e2e/pages/*"]
+    }
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules"]
