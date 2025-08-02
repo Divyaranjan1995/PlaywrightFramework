@@ -10,3 +10,4 @@ class TopMenuComponent {
 }
 
 export default TopMenuComponent;
+export { TopMenuComponent };
