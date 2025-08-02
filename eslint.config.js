@@ -27,7 +27,7 @@ export default [
       ...playwrightPlugin.configs.recommended.rules,
       // Add any custom rules here
       semi: ["error", "always"],
-      quotes: ["error", "single"],
+      quotes: ["error", "double"],
       "@typescript-eslint/no-unused-vars": "warn",
       "playwright/expect-expect": [
         "warn",
