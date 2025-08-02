@@ -5,9 +5,16 @@ import { config } from 'dotenv';
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
-config({
-  path: '.env',
-});
+
+if(process.env.ENVIRONMENT){
+  console.log('Enviroment : ' , process.env.ENVIRONMENT);
+  config({
+    path : `.env.${process.env.ENVIRONMENT}`,
+    override : true
+  });
+} else{
+  config();
+}
 
 /**
  * See https://playwright.dev/docs/test-configuration.
