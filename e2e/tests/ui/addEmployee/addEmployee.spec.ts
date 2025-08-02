@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import { Env } from "../../frameworkConfig/env";
+import { Env } from "../../../frameworkConfig/env";
 
 test("Add Employee", async ({ page }) => {
   if (!Env.USER || !Env.BASE_URL || !Env.PASSWORD) {

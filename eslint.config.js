@@ -29,6 +29,7 @@ export default [
       semi: ["error", "always"],
       quotes: ["error", "double"],
       "@typescript-eslint/no-unused-vars": "warn",
+      "no-console": "off",
       "playwright/expect-expect": [
         "warn",
         {
