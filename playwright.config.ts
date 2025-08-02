@@ -6,13 +6,13 @@ import { config } from 'dotenv';
  * https://github.com/motdotla/dotenv
  */
 
-if(process.env.ENVIRONMENT){
-  console.log('Enviroment : ' , process.env.ENVIRONMENT);
+if (process.env.ENVIRONMENT) {
+  //console.log('Enviroment : ' , process.env.ENVIRONMENT);
   config({
-    path : `.env.${process.env.ENVIRONMENT}`,
-    override : true
+    path: `.env.${process.env.ENVIRONMENT}`,
+    override: true,
   });
-} else{
+} else {
   config();
 }
 

@@ -2,12 +2,11 @@ import { test, expect } from '@playwright/test';
 import { Env } from '../../frameworkConfig/env';
 
 test('Add Employee', async ({ page }) => {
-  if (!Env.USER || !Env.BASE_URL || !Env.PASSWORD) {    throw new Error(
+  if (!Env.USER || !Env.BASE_URL || !Env.PASSWORD) {
+    throw new Error(
       'Required environment variables (URL, USERNAME, PASSWORD) are not set.',
     );
   }
-
-  var a;
 
   await page.goto(Env.BASE_URL);
   await page.getByRole('textbox', { name: 'Username' }).fill(Env.USER);
